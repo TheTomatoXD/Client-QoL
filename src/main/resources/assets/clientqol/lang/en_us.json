@@ -1,4 +1,7 @@
 {
   "item.clientqol.ruby": "§cRuby",
-  "item.clientqol.ruby_sword": "§4Ruby Sword"
+  "item.clientqol.ruby_sword": "§cRuby Sword",
+  "block.clientqol.ruby_block": "§cBlock of Ruby",
+
+  "itemgroup.ruby": "Ruby Tutorial Group"
 }

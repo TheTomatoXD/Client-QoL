@@ -2,6 +2,8 @@ package net.tomatoxd.clientqol;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tomatoxd.clientqol.block.ModBlocks;
+import net.tomatoxd.clientqol.item.ModItemGroups;
 import net.tomatoxd.clientqol.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,5 +15,7 @@ public class ClientQoL implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.RegisterModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }

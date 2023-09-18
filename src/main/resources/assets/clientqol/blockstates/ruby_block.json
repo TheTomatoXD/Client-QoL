@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clientqol:block/ruby_block"
+    }
+  }
+}
