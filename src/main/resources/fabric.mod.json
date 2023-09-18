@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "clientqol",
+	"version": "${version}",
+	"name": "Client-QOL",
+	"description": "This is my First mod EVER! it adds several new (mostly) Client-Side QoL features",
+	"authors": [
+		"Tomato_XD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/clientqol/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tomatoxd.clientqol.ClientQoL"
+		],
+		"client": [
+			"net.tomatoxd.clientqol.ClientQoLClient"
+		],
+		"fabric-datagen": [
+			"net.tomatoxd.clientqol.ClientQoLDataGenerator"
+		]
+	},
+	"mixins": [
+		"clientqol.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
