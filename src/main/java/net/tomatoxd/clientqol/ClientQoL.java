@@ -2,6 +2,7 @@ package net.tomatoxd.clientqol;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tomatoxd.clientqol.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +20,7 @@ public class ClientQoL implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Tomato world!");
+
+		ModItems.registerModItems();
 	}
 }
