@@ -25,7 +25,7 @@ public class ModBlocks {
     }
 
     public static void RegisterModBlocks() {
-        ClientQoL.LOGGER.info("Registering Block Info from " + ClientQoL.MOD_ID);
+        ClientQoL.LOGGER.info("Registering Block info from " + ClientQoL.MOD_ID);
 
     }
 }

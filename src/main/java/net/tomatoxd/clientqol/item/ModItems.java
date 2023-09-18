@@ -26,7 +26,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        ClientQoL.LOGGER.info("Registering Item Info from " + ClientQoL.MOD_ID);
+        ClientQoL.LOGGER.info("Registering Item info from " + ClientQoL.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
