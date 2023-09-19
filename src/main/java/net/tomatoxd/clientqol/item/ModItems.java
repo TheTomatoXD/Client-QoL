@@ -14,11 +14,10 @@ import net.tomatoxd.clientqol.ClientQoL;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
-    public static final Item RUBY_SWORD = registerItem("ruby_sword", new Item(new FabricItemSettings()));
+    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY);
-        entries.add(RUBY_SWORD);
+
     }
 
     private static Item registerItem(String name, Item item) {

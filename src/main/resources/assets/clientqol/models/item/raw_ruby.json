@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "clientqol:item/ruby_sword"
+    "layer0": "clientqol:item/raw_ruby"
   }
 }
