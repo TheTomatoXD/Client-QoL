@@ -9,16 +9,19 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tomatoxd.clientqol.ClientQoL;
 
 public class ModBlocks {
-    public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)));
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
 
     private static Block registerBlock(String name, Block block) {
-        Registry.register(Registries.ITEM, new Identifier(ClientQoL.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(ClientQoL.MOD_ID, name), block);
     }
 
@@ -27,8 +30,7 @@ public class ModBlocks {
                 new BlockItem(block, new FabricItemSettings()));
     }
 
-    public static void RegisterModBlocks() {
-        ClientQoL.LOGGER.info("Registering Block info from " + ClientQoL.MOD_ID);
-
+    public static void registerModBlocks() {
+        ClientQoL.LOGGER.info("Registering ModBlocks for " + ClientQoL.MOD_ID);
     }
 }
