@@ -2,6 +2,7 @@
   "item.clientqol.ruby": "§cRuby",
   "item.clientqol.ruby_sword": "§cRuby Sword",
   "block.clientqol.ruby_block": "§cBlock of Ruby",
+  "block.clientqol.raw_ruby_block": "§cBlock of Raw Ruby",
 
   "itemgroup.ruby": "Ruby tutorial Group"
 }

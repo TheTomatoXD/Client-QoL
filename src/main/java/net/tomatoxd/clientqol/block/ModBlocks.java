@@ -13,9 +13,12 @@ import net.minecraft.util.Identifier;
 import net.tomatoxd.clientqol.ClientQoL;
 
 public class ModBlocks {
-    public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.ICE)));
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(ClientQoL.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
         return Registry.register(Registries.BLOCK, new Identifier(ClientQoL.MOD_ID, name), block);
     }
 

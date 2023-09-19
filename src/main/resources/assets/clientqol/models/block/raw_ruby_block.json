@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "clientqol:block/raw_ruby_block"
+  }
+}
